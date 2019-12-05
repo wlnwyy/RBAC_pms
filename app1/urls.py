@@ -1,0 +1,33 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('index/', views.index, name='index'),
+    path("zhu/",views.zhu,name='zhu'),
+    path('', views.UserLogin.as_view(), name='login'),
+    path('admin_add/', views.admin_add, name='admin_add'),
+    path('admin_cate/', views.admin_cate, name='admin_cate'),
+    path('admin_edit/', views.admin_edit, name='admin_edit'),
+    path('admin_info/', views.admin_info, name='admin_info'),
+    path('admin_list/', views.admin_list, name='admin_list'),
+    path('admin_password/', views.admin_password, name='admin_password'),
+    path('admin_role/', views.admin_role, name='admin_role'),
+    path('admin_rule/', views.admin_rule, name='admin_rule'),
+    path('echarts1/', views.echarts1, name='echarts1'),
+    path('echarts2/', views.echarts2, name='echarts2'),
+    path('echarts3/', views.echarts3, name='echarts3'),
+    path('echarts4/', views.echarts4, name='echarts4'),
+    path('echarts5/', views.echarts5, name='echarts5'),
+    path('echarts6/', views.echarts6, name='echarts6'),
+    path('echarts7/', views.echarts7, name='echarts7'),
+    path('echarts8/', views.echarts8, name='echarts8'),
+    path('member_add/', views.member_add, name='member_add'),
+    path('member_del/', views.member_del, name='member_del'),
+    path('member_edit/', views.member_edit, name='member_edit'),
+    path('member_list/', views.member_list, name='member_list'),
+    path('member_password/', views.member_password, name='member_password'),
+    path('order_add/', views.order_add, name='order_add'),
+    path('order_list/', views.order_list, name='order_list'),
+    path('role_add/', views.role_add, name='role_add'),
+    path('welcome/', views.welcome, name='welcome'),
+]
